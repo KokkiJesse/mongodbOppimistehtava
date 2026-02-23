@@ -1,24 +1,28 @@
 [
   {
     "_id": { "$oid": "699c25a62939d412420139a2" },
+    "courseId": "HT00CF01",
     "name": "Tietokantojen jatko-opinnot",
     "credits": 5,
     "teacher": "Matti Meikäläinen"
   },
   {
     "_id": { "$oid": "699c25a62939d412420139a3" },
+    "courseId": "HT00CF02",
     "name": "Pilviarkkitehtuuri",
     "credits": 5,
     "teacher": "Liisa Opettaja"
   },
   {
     "_id": { "$oid": "699c25a62939d412420139a4" },
+    "courseId": "HT00CF03",
     "name": "Backend-kehitys",
     "credits": 5,
     "teacher": "Pekka Proffa"
   },
   {
     "_id": { "$oid": "699c25a62939d412420139a5" },
+    "courseId": "HT00CF04",
     "name": "Python-ohjelmointi",
     "credits": 5,
     "teacher": "Sari Cloud"

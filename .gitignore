@@ -1,0 +1,39 @@
+# MongoDB data
+/data
+/db
+/mongodb-data
+*.log
+
+# Environment variables
+.env
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build / dist
+dist/
+build/
+
+# Backup files
+*.bak
+*.tmp

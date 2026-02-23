@@ -1,0 +1,64 @@
+[
+  {
+    "_id": { "$oid": "699c25ef2939d412420139a6" },
+    "name": "Jesse",
+    "email": "jesse@email.com",
+    "registeredAt": { "$date": "2026-01-01T10:00:00Z" },
+    "courses": [
+      {
+        "courseId": { "$oid": "699c25a62939d412420139a2" },
+        "grade": 4,
+        "completedAt": { "$date": "2026-02-20T12:00:00Z" }
+      },
+      {
+        "courseId": { "$oid": "699c25a62939d412420139a3" },
+        "grade": 5,
+        "completedAt": { "$date": "2026-02-25T14:00:00Z" }
+      }
+    ]
+  },
+  {
+    "_id": { "$oid": "699c25ef2939d412420139a7" },
+    "name": "Maija Mallikas",
+    "email": "maija@email.com",
+    "registeredAt": { "$date": "2026-01-05T09:30:00Z" },
+    "courses": [
+      {
+        "courseId": { "$oid": "699c25a62939d412420139a4" },
+        "grade": 3,
+        "completedAt": { "$date": "2026-02-18T11:00:00Z" }
+      }
+    ]
+  },
+  {
+    "_id": { "$oid": "699c25ef2939d412420139a8" },
+    "name": "Teemu Testaaja",
+    "email": "teemu@email.com",
+    "registeredAt": { "$date": "2026-01-10T08:15:00Z" },
+    "courses": [
+      {
+        "courseId": { "$oid": "699c25a62939d412420139a2" },
+        "grade": 2,
+        "completedAt": { "$date": "2026-02-22T10:45:00Z" }
+      },
+      {
+        "courseId": { "$oid": "699c25a62939d412420139a5" },
+        "grade": 4,
+        "completedAt": { "$date": "2026-03-01T09:00:00Z" }
+      }
+    ]
+  },
+  {
+    "_id": { "$oid": "699c25ef2939d412420139a9" },
+    "name": "Laura Lukija",
+    "email": "laura@email.com",
+    "registeredAt": { "$date": "2026-01-12T13:20:00Z" },
+    "courses": [
+      {
+        "courseId": { "$oid": "699c25a62939d412420139a6" },
+        "grade": 5,
+        "completedAt": { "$date": "2026-03-05T15:30:00Z" }
+      }
+    ]
+  }
+]

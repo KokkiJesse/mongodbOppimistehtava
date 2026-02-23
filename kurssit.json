@@ -1,0 +1,26 @@
+[
+  {
+    "_id": { "$oid": "699c25a62939d412420139a2" },
+    "name": "Tietokantojen jatko-opinnot",
+    "credits": 5,
+    "teacher": "Matti Meikäläinen"
+  },
+  {
+    "_id": { "$oid": "699c25a62939d412420139a3" },
+    "name": "Pilviarkkitehtuuri",
+    "credits": 5,
+    "teacher": "Liisa Opettaja"
+  },
+  {
+    "_id": { "$oid": "699c25a62939d412420139a4" },
+    "name": "Backend-kehitys",
+    "credits": 5,
+    "teacher": "Pekka Proffa"
+  },
+  {
+    "_id": { "$oid": "699c25a62939d412420139a5" },
+    "name": "Python-ohjelmointi",
+    "credits": 5,
+    "teacher": "Sari Cloud"
+  }
+]

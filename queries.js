@@ -1,25 +1,40 @@
-// 1) Listaa kaikki opiskelijat.
+// Indeksi opiskelijanumerolle.
+db.opiskelijat.createIndex({ studentId: 1 }, { unique: true });
+
+// Indeksi kurssitunnukselle.
+db.kurssit.createIndex({ courseId: 1 }, { unique: true });
+
+// Hae kaikki opiskelijat
 db.opiskelijat.find({});
 
-// 2) Hae yksi opiskelija sahkopostilla.
-db.opiskelijat.findOne({ email: 'jesse@email.com' });
+// Hae opiskelijat, joilla on arvosana 4 tai korkeampi
+db.opiskelijat.find({ 'courses.grade': { $gte: 4 } });
 
-// 3) Listaa kaikki kurssit.
-db.kurssit.find({});
+// Hae kurssit, joiden opintopisteet ovat 3 tai enemmän
+db.kurssit.find({ credits: { $gte: 3 } });
 
-// 4)
-db.kurssit.find({ nimi: 'Tietokannat' });
+// Päivitä opiskelijan säpö
+db.opiskelijat.updateOne(
+  { _id: ObjectId('650f1234567890abcdef1234') },
+  { $set: { email: 'uusi.email@example.com' } },
+);
 
-// 5) Opiskelijat, joilla on arvosana 5 jossain kurssissa.
-db.opiskelijat.find({ 'courses.grade': 5 });
+// Päivitä kurssin opettaja
+db.kurssit.updateOne(
+  { courseId: 'HT00CF01' },
+  { $set: { teacher: 'Uusi Opettaja' } },
+);
 
-// 6) Järjestä opiskelijat rekisteröitymispäivän mukaan (uusimmat ensin).
-db.opiskelijat
-  .find({}, { name: 1, registeredAt: 1, _id: 0 })
-  .sort({ registeredAt: -1 });
+// Laske opiskelijoiden kokonaismaara
+db.opiskelijat.aggregate([{ $count: 'opiskelijoita' }]);
 
-// 7) Indeksi opiskelijanumerolle.
-db.opiskelijat.createIndex({ opiskelijanumero: 1 }, { unique: true });
+// Laske kurssien keskiarvo opintopisteistä
+db.kurssit.aggregate([
+  { $group: { _id: null, keskiarvoPisteet: { $avg: '$credits' } } },
+]);
 
-// 8) Indeksi kurssitunnukselle.
-db.kurssit.createIndex({ kurssitunnus: 1 }, { unique: true });
+// Poista opiskelija studentId:lla
+db.opiskelijat.deleteOne({ studentId: 'ag1234' });
+
+// Poista kurssi courseId:lla
+db.kurssit.deleteOne({ courseId: 'HT00CF01' });

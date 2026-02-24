@@ -1,10 +1,10 @@
 # NoSQL-Tietokanta Oppimistehtävä: Mongodb
 
---
+MongoDB-tietokanta opintojen seurantaan
 
 ## Kurssiseurantasovellus
 
-**Kuvaus:**--
+**Kuvaus:** MongoDB-tietokanta joka sisältää dataa kursseista, opiskelijoista ja heidän opintosuorituksistaan. MongoDB valittiin, koska se sopii joustavasti muuttuviin tietoihin ja skaalautuvuuteen. MongoDB tukee tehokkaita hakuja, indeksointia ja aggregaatioita, joiden avulla voidaan tehdä monipuolisia kyselyjä.
 
 **Testaus:**
 
